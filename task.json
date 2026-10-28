@@ -1,0 +1,380 @@
+[
+  {
+    "idKelas": "kelas-a",
+    "namaKelas": "Kelas A",
+    "daftarSiswa": [
+      {
+        "noAbsen": 1,
+        "nama": "Ahmad Rizky"
+      },
+      {
+        "noAbsen": 2,
+        "nama": "Budi Santoso"
+      },
+      {
+        "noAbsen": 3,
+        "nama": "Citra Lestari"
+      },
+      {
+        "noAbsen": 4,
+        "nama": "Dian Pratama"
+      },
+      {
+        "noAbsen": 5,
+        "nama": "Eka Nurhaliza"
+      },
+      {
+        "noAbsen": 6,
+        "nama": "Fajar Ramadhan"
+      },
+      {
+        "noAbsen": 7,
+        "nama": "Gilang Kurniawan"
+      },
+      {
+        "noAbsen": 8,
+        "nama": "Hana Pertiwi"
+      },
+      {
+        "noAbsen": 9,
+        "nama": "Pertiwi"
+      },
+      {
+        "noAbsen": 10,
+        "nama": "Ahmad Rizky"
+      },
+      {
+        "noAbsen": 11,
+        "nama": "Budi Santoso"
+      },
+      {
+        "noAbsen": 12,
+        "nama": "Citra Lestari"
+      },
+      {
+        "noAbsen": 13,
+        "nama": "Dian Pratama"
+      },
+      {
+        "noAbsen": 14,
+        "nama": "Eka Nurhaliza"
+      },
+      {
+        "noAbsen": 15,
+        "nama": "Fajar Ramadhan"
+      },
+      {
+        "noAbsen": 16,
+        "nama": "Gilang Kurniawan"
+      },
+      {
+        "noAbsen": 17,
+        "nama": "Hana Pertiwi"
+      },
+      {
+        "noAbsen": 18,
+        "nama": "Pertiwi"
+      },
+      {
+        "noAbsen": 19,
+        "nama": "Ahmad Rizky"
+      },
+      {
+        "noAbsen": 20,
+        "nama": "Budi Santoso"
+      },
+      {
+        "noAbsen": 21,
+        "nama": "Citra Lestari"
+      },
+      {
+        "noAbsen": 22,
+        "nama": "Dian Pratama"
+      },
+      {
+        "noAbsen": 23,
+        "nama": "Eka Nurhaliza"
+      },
+      {
+        "noAbsen": 24,
+        "nama": "Fajar Ramadhan"
+      },
+      {
+        "noAbsen": 25,
+        "nama": "Gilang Kurniawan"
+      },
+      {
+        "noAbsen": 26,
+        "nama": "Hana Pertiwi"
+      },
+      {
+        "noAbsen": 27,
+        "nama": "Pertiwi"
+      },
+      {
+        "noAbsen": 28,
+        "nama": "Ahmad Rizky"
+      },
+      {
+        "noAbsen": 29,
+        "nama": "Budi Santoso"
+      },
+      {
+        "noAbsen": 30,
+        "nama": "Citra Lestari"
+      }
+    ]
+  },
+  {
+    "idKelas": "kelas-b",
+    "namaKelas": "Kelas B",
+    "daftarSiswa": [
+      {
+        "noAbsen": 1,
+        "nama": "Aisyah Humaira"
+      },
+      {
+        "noAbsen": 2,
+        "nama": "Bayu Samudra"
+      },
+      {
+        "noAbsen": 3,
+        "nama": "Cantika Maya"
+      },
+      {
+        "noAbsen": 4,
+        "nama": "Dimas Anggara"
+      },
+      {
+        "noAbsen": 5,
+        "nama": "Elang Syahputra"
+      },
+      {
+        "noAbsen": 6,
+        "nama": "Fitri Handayani"
+      },
+      {
+        "noAbsen": 7,
+        "nama": "Galih Rakasiwi"
+      },
+      {
+        "noAbsen": 8,
+        "nama": "Hafiz Ridwan"
+      },
+      {
+        "noAbsen": 9,
+        "nama": "Aisyah Humaira"
+      },
+      {
+        "noAbsen": 10,
+        "nama": "Bayu Samudra"
+      },
+      {
+        "noAbsen": 11,
+        "nama": "Cantika Maya"
+      },
+      {
+        "noAbsen": 12,
+        "nama": "Dimas Anggara"
+      },
+      {
+        "noAbsen": 13,
+        "nama": "Elang Syahputra"
+      },
+      {
+        "noAbsen": 14,
+        "nama": "Fitri Handayani"
+      },
+      {
+        "noAbsen": 15,
+        "nama": "Galih Rakasiwi"
+      },
+      {
+        "noAbsen": 16,
+        "nama": "Hafiz Ridwan"
+      },
+      {
+        "noAbsen": 17,
+        "nama": "Aisyah Humaira"
+      },
+      {
+        "noAbsen": 18,
+        "nama": "Bayu Samudra"
+      },
+      {
+        "noAbsen": 19,
+        "nama": "Cantika Maya"
+      },
+      {
+        "noAbsen": 20,
+        "nama": "Dimas Anggara"
+      },
+      {
+        "noAbsen": 21,
+        "nama": "Elang Syahputra"
+      },
+      {
+        "noAbsen": 22,
+        "nama": "Fitri Handayani"
+      },
+      {
+        "noAbsen": 23,
+        "nama": "Galih Rakasiwi"
+      },
+      {
+        "noAbsen": 24,
+        "nama": "Hafiz Ridwan"
+      },
+      {
+        "noAbsen": 25,
+        "nama": "Aisyah Humaira"
+      },
+      {
+        "noAbsen": 26,
+        "nama": "Bayu Samudra"
+      },
+      {
+        "noAbsen": 27,
+        "nama": "Cantika Maya"
+      },
+      {
+        "noAbsen": 28,
+        "nama": "Dimas Anggara"
+      },
+      {
+        "noAbsen": 29,
+        "nama": "Elang Syahputra"
+      },
+      {
+        "noAbsen": 30,
+        "nama": "Fitri Handayani"
+      }
+    ]
+  },
+  {
+    "idKelas": "kelas-c",
+    "namaKelas": "Kelas C",
+    "daftarSiswa": [
+      {
+        "noAbsen": 1,
+        "nama": "Ibrahim Maulana"
+      },
+      {
+        "noAbsen": 2,
+        "nama": "Jasmine Putri"
+      },
+      {
+        "noAbsen": 3,
+        "nama": "Kevin Alexander"
+      },
+      {
+        "noAbsen": 4,
+        "nama": "Laila Majnun"
+      },
+      {
+        "noAbsen": 5,
+        "nama": "Muhammad Al-Fatih"
+      },
+      {
+        "noAbsen": 6,
+        "nama": "Naufal Azhar"
+      },
+      {
+        "noAbsen": 7,
+        "nama": "Olivia Zalianty"
+      },
+      {
+        "noAbsen": 8,
+        "nama": "Putra Wardana"
+      },
+      {
+        "noAbsen": 9,
+        "nama": "Ibrahim Maulana"
+      },
+      {
+        "noAbsen": 10,
+        "nama": "Jasmine Putri"
+      },
+      {
+        "noAbsen": 11,
+        "nama": "Kevin Alexander"
+      },
+      {
+        "noAbsen": 12,
+        "nama": "Laila Majnun"
+      },
+      {
+        "noAbsen": 13,
+        "nama": "Muhammad Al-Fatih"
+      },
+      {
+        "noAbsen": 14,
+        "nama": "Naufal Azhar"
+      },
+      {
+        "noAbsen": 15,
+        "nama": "Olivia Zalianty"
+      },
+      {
+        "noAbsen": 16,
+        "nama": "Putra Wardana"
+      },
+      {
+        "noAbsen": 17,
+        "nama": "Ibrahim Maulana"
+      },
+      {
+        "noAbsen": 18,
+        "nama": "Jasmine Putri"
+      },
+      {
+        "noAbsen": 19,
+        "nama": "Kevin Alexander"
+      },
+      {
+        "noAbsen": 20,
+        "nama": "Laila Majnun"
+      },
+      {
+        "noAbsen": 21,
+        "nama": "Muhammad Al-Fatih"
+      },
+      {
+        "noAbsen": 22,
+        "nama": "Naufal Azhar"
+      },
+      {
+        "noAbsen": 23,
+        "nama": "Olivia Zalianty"
+      },
+      {
+        "noAbsen": 24,
+        "nama": "Putra Wardana"
+      },
+      {
+        "noAbsen": 25,
+        "nama": "Ibrahim Maulana"
+      },
+      {
+        "noAbsen": 26,
+        "nama": "Jasmine Putri"
+      },
+      {
+        "noAbsen": 27,
+        "nama": "Kevin Alexander"
+      },
+      {
+        "noAbsen": 28,
+        "nama": "Laila Majnun"
+      },
+      {
+        "noAbsen": 29,
+        "nama": "Muhammad Al-Fatih"
+      },
+      {
+        "noAbsen": 30,
+        "nama": "Naufal Azhar"
+      }
+    ]
+  }
+]
