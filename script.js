@@ -4,6 +4,21 @@ const BATCH_SIZE = 4;
 const badgeColors = ["bg-[#5A7865]", "bg-[#A3B19B]", "bg-[#C88A68]", "bg-[#5A7865]"];
 const namaHariList = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
 
+// Tema mingguan: minggu ganjil = English, minggu genap = Arabic (berselang-seling)
+const HARI_AKTIF_PER_MINGGU = 4; // Senin - Kamis = 1 deret card
+const TEMA_MINGGU = {
+  english: {
+    label: "English",
+    card: "border-[#9DBFDB] bg-[#E6F0F8]",
+    pill: "bg-[#3B6E99] text-white"
+  },
+  arabic: {
+    label: "Arabic",
+    card: "border-[#DDBF73] bg-[#FAF0D2]",
+    pill: "bg-[#8A6A12] text-white"
+  }
+};
+
 // Konfigurasi Paginasi
 const ITEMS_PER_PAGE = 12;
 let currentPage = 1;
@@ -46,12 +61,19 @@ function generateJadwalMingguan(dataKelas, tanggalMulaiStr = '30/10/2026') {
       const kelasSaatIni = dataKelas[statePointer.indexKelasTerakhir];
       const totalSiswa = kelasSaatIni.daftarSiswa.length;
 
-      let indexAwal = statePointer.pointerAbsen[kelasSaatIni.idKelas];
-      let indexAkhir = indexAwal + BATCH_SIZE;
+      const indexAwal = statePointer.pointerAbsen[kelasSaatIni.idKelas];
 
-      const siswaMaju = kelasSaatIni.daftarSiswa.slice(indexAwal, indexAkhir);
+      // Ambil siswa secara melingkar: kalau sampai absen terakhir,
+      // slot yang kosong diisi dari absen paling awal.
+      // Math.min mencegah satu siswa muncul dua kali di kelas yang siswanya < BATCH_SIZE.
+      const jumlahAmbil = Math.min(BATCH_SIZE, totalSiswa);
+      const siswaMaju = [];
+      for (let i = 0; i < jumlahAmbil; i++) {
+        siswaMaju.push(kelasSaatIni.daftarSiswa[(indexAwal + i) % totalSiswa]);
+      }
 
-      statePointer.pointerAbsen[kelasSaatIni.idKelas] = indexAkhir % totalSiswa;
+      // Giliran berikutnya lanjut dari siswa setelah siswa terakhir yang tampil
+      statePointer.pointerAbsen[kelasSaatIni.idKelas] = (indexAwal + jumlahAmbil) % totalSiswa;
       statePointer.indexKelasTerakhir = (statePointer.indexKelasTerakhir + 1) % jumlahKelas;
 
       hasilJadwal.push({
@@ -87,7 +109,7 @@ function renderHalaman(page) {
 
   jadwalHalamanIni.forEach((jadwal, index) => {
     const listPetugasHTML = jadwal.petugas.map((nama, idx) => `
-      <li class="flex items-center space-x-3 rounded-lg bg-[#F4F5F0]/60 p-2.5 transition hover:bg-[#F4F5F0]">
+      <li class="flex items-center space-x-3 rounded-lg bg-white/70 p-2.5 transition hover:bg-white">
         <div class="flex h-7 w-7 items-center justify-center rounded-full ${badgeColors[idx % badgeColors.length]} text-xs font-bold text-white">
           ${idx + 1}
         </div>
@@ -97,14 +119,21 @@ function renderHalaman(page) {
 
     const isHariIni = (page === 1 && index === 0);
 
+    // Tentukan minggu ke-berapa berdasarkan urutan global (bukan urutan di halaman),
+    // supaya pola English/Arabic tetap nyambung antar halaman paginasi.
+    const urutanGlobal = startIndex + index;
+    const mingguKe = Math.floor(urutanGlobal / HARI_AKTIF_PER_MINGGU);
+    const tema = mingguKe % 2 === 0 ? TEMA_MINGGU.english : TEMA_MINGGU.arabic;
+
     const cardHTML = `
-      <div class="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition hover:shadow-md flex flex-col justify-between">
+      <div class="rounded-2xl border ${tema.card} p-5 shadow-sm transition hover:shadow-md flex flex-col justify-between">
         <div>
-          <div class="mb-4 border-b border-gray-100 pb-3 flex items-center justify-between">
+          <span class="mb-3 inline-block rounded-full {tema.label}</span>
+          <div class="mb-4 border-b border-black/10 pb-3 flex items-center justify-between">
             <div>
               <h3 class="text-xl font-bold text-[#2A342D]">${jadwal.hari}</h3>
               <p class="text-xs text-[#5A7865] font-semibold mt-0.5">${jadwal.namaKelas}</p>
-              <p class="text-xs text-gray-400">${jadwal.tanggal}</p>
+              <p class="text-xs text-gray-500">${jadwal.tanggal}</p>
             </div>
             ${isHariIni ? '<span class="rounded-full bg-[#5A7865]/10 px-2.5 py-1 text-xs font-medium text-[#5A7865]">Hari Ini</span>' : ''}
           </div>
